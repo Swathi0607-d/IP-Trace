@@ -1,0 +1,58 @@
+{
+  "manifest_version": 2,
+  "name": "IPTrace",
+  "version": "2.0.0",
+  "description": "Track your public IP, ISP, ASN, timezone and real GPS location with IPTrace.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "iptrace@extension.com",
+      "strict_min_version": "91.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ],
+        "optional": []
+      }
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "https://ipinfo.io/*",
+    "https://ipapi.co/*",
+    "https://ipwho.is/*",
+    "https://freeipapi.com/*",
+    "https://nominatim.openstreetmap.org/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
