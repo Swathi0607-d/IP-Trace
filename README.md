@@ -1,24 +1,25 @@
-# 🌐 IPTrace - IP Tracking Tool
+# 🌐 IPTrace - Firefox Browser Extension
 
-A simple IP tracking project that fetches and displays details about an IP address. Built as a beginner-friendly networking project to demonstrate how IP-based information can be retrieved and analyzed.
+A lightweight Firefox browser extension that tracks and displays IP address details in real time. Built using the WebExtensions API, this project demonstrates API integration and basic networking concepts in a simple and user-friendly way.
 
 ---
 
 ## 🎯 What It Does
 
-🔍 Detects and displays IP address details
-🌍 Shows approximate location information
-📡 Retrieves network-related data
-💡 Simple interface for easy understanding
+🔍 Fetches your current IP address
+🌍 Displays geolocation details (country, region, city)
+📡 Shows ISP and network information
+⚡ Provides instant results via the browser toolbar
 
 ---
 
 ## 📊 Features
 
-* Fetch IP address automatically or manually
-* Display location (country, city, etc.)
-* Show ISP / network details
-* Lightweight and easy to run
+* Real-time IP tracking
+* One-click access through extension popup
+* Clean and minimal UI
+* Fast API-based data retrieval
+* Uses multiple APIs for reliable data
 
 ---
 
@@ -26,34 +27,58 @@ A simple IP tracking project that fetches and displays details about an IP addre
 
 IPTrace/
 │
-├── index.html        ← Main UI
+├── manifest.json     ← Extension configuration (Firefox)
+├── popup.html        ← Extension UI
 ├── style.css         ← Styling
-├── script.js         ← Logic / API calls
-└── README.md         ← Project documentation
+├── script.js         ← Logic & API calls
+└── README.md         ← Documentation
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool       | Purpose                      |
-| ---------- | ---------------------------- |
-| HTML       | Structure                    |
-| CSS        | Design                       |
-| JavaScript | Functionality & API handling |
+| Tool              | Purpose                     |
+| ----------------- | --------------------------- |
+| HTML              | Structure                   |
+| CSS               | Design                      |
+| JavaScript        | Functionality               |
+| WebExtensions API | Browser extension framework |
+| External APIs     | Fetch IP and location data  |
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ How to Install (Firefox)
 
 1. Download or clone the repository
 
 git clone https://github.com/YOUR_USERNAME/IPTrace.git
 
-2. Open the project folder
+2. Open Firefox
 
-3. Run the project
+3. Navigate to:
+   about:debugging#/runtime/this-firefox
 
-* Open `index.html` in your browser
+4. Click **"Load Temporary Add-on"**
+
+5. Select the `manifest.json` file
+
+✅ Extension will be installed temporarily and visible in the toolbar
+
+---
+
+## ▶️ How to Use
+
+1. Click the extension icon
+2. View IP details instantly
+3. Refresh if needed
+
+---
+
+## ⚠️ Note
+
+* This extension runs as a **temporary add-on**
+* It will be removed when Firefox is closed
+* Permanent installation requires signing via Firefox Add-ons
 
 ---
 
@@ -68,30 +93,30 @@ git clone https://github.com/YOUR_USERNAME/IPTrace.git
 
 ## 🎯 Purpose
 
-This project is created as a beginner-level networking project to understand how IP tracking works using APIs and frontend technologies.
+This project demonstrates how Firefox extensions can interact with external APIs to fetch and display real-time network information.
 
 ---
 
 ## 🧠 Skills Demonstrated
 
+* Firefox extension development (WebExtensions API)
+* API integration and data handling
 * Basic networking concepts
-* API integration
-* Frontend development
-* Data display and formatting
+* UI design and user interaction
 
 ---
 
 ## 🎯 Use Cases
 
-* Learning IP tracking basics
-* Demonstrating simple cybersecurity concepts
-* Beginner portfolio project
+* Learning browser extension development
+* Understanding IP tracking basics
+* Beginner cybersecurity portfolio project
 
 ---
 
 ## 👩‍💻 Author
 
-Your Name : V Swathi
+Your Name
 
 ---
 
