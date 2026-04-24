@@ -115,8 +115,6 @@ This project demonstrates how Firefox extensions can interact with external APIs
 ---
 
 ## 👩‍💻 Author
-
-Your Name
 V Swathi
 ---
 
